@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/settingsFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_1"
+        android:title="@string/text_label_1"/>
+    <item
+        android:id="@+id/shopFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_2"
+        android:title="@string/text_label_2"/>
+    <item
+        android:id="@+id/jobFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_3"
+        android:title="@string/text_label_3"/>
+    <item
+        android:id="@+id/notificationsFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_4"
+        android:title="@string/text_label_4"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_5"
+        android:title="@string/text_label_5"/>
+</menu>

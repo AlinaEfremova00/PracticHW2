@@ -54,4 +54,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    val glideVersion = "4.16.0"
+    implementation("com.github.bumptech.glide:glide:$glideVersion")
 }

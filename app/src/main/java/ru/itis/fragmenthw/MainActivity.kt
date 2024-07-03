@@ -9,32 +9,24 @@ import ru.itis.fragmenthw.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private var binding: ActivityMainBinding? = null
-
-    private var controller: NavController? = null
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater).also {
-            setContentView(it.root)
-        }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        controller = (supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment)
-            .navController
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.container) as NavHostFragment
+        navController = navHostFragment.navController
 
-        controller?.let { navController ->
-            binding?.bottomNavigation?.setupWithNavController(navController)
-        }
+        binding.bottomNavigation.setupWithNavController(navController)
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
-
-        controller?.navigateUp()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        binding = null
+        if (!navController.navigateUp()) {
+            super.onBackPressed()
+        }
     }
 }

@@ -16,7 +16,7 @@
         android:icon="@drawable/icon_3"
         android:title="@string/text_label_3"/>
     <item
-        android:id="@+id/notificationsFragment"
+        android:id="@+id/notificationFragment"
         android:enabled="true"
         android:icon="@drawable/icon_4"
         android:title="@string/text_label_4"/>

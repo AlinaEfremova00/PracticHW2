@@ -3,7 +3,7 @@
     <string name="text_label_1">Settings</string>
     <string name="text_label_2">Shop</string>
     <string name="text_label_3">Job</string>
-    <string name="text_label_4">Notifications</string>
+    <string name="text_label_4">Notification</string>
     <string name="text_label_5">Profile</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import ru.itis.fragmenthw.databinding.FragmentNotificationBinding
 
 
-class NotificationFragment : Fragment(R.layout.fragment_job) {
+class NotificationFragment : Fragment(R.layout.fragment_notification) {
 
     private var binding: FragmentNotificationBinding? = null
 

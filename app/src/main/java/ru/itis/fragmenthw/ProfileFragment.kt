@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import ru.itis.fragmenthw.databinding.FragmentProfileBinding
 
 
-class ProfileFragment : Fragment(R.layout.fragment_job) {
+class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
     private var binding: FragmentProfileBinding? = null
 
